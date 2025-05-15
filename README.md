@@ -1,13 +1,8 @@
-Voici un exemple de fichier `README.md` clair et complet pour ton projet **Rush Hour** en Pygame :
 
----
-
-````markdown
 # 🚗 Rush Hour - Jeu de logique en Python (Pygame)
 
 Ce projet est une reproduction du célèbre jeu **Rush Hour**, développée en Python à l'aide de la bibliothèque **Pygame**. Le but du jeu est de faire sortir la voiture rouge en la déplaçant sur une grille encombrée d'autres véhicules.
 
----
 
 ## 🛠️ Installation
 
@@ -19,14 +14,14 @@ Assurez-vous d'avoir Python 3.7 ou supérieur installé.
 
 Ouvrez un terminal à la racine du projet et exécutez :
 
-```bash
+```
 pip install pygame
-````
+```
 ## 🎮 Comment jouer
 
 * Lancez le jeu avec :
 
-```bash
+```
 python main.py
 ```
 
