@@ -134,6 +134,7 @@ class GameUI:
 
     def check_menu_click(self, pos):
         self.selected = None
+        # Boutons des niveaux 1 à 3
         for i in range(3):
             btn_rect = pygame.Rect(WIDTH // 2 - 100, 150 + i * 100, 200, 60)
             if btn_rect.collidepoint(pos):
@@ -142,21 +143,22 @@ class GameUI:
                 self.in_menu = False
                 self.isGameRunning = True
                 self.randomLevel = None
-                return  # on quitte après un clic valide
+                return  # clic valide, on quitte
     
         # Bouton "niveau aléatoire"
-        if self.in_menu:
+        random_btn_rect = pygame.Rect(WIDTH // 2 - 100, 150 + 3 * 100, 200, 60)
+        if random_btn_rect.collidepoint(pos):
             # Affichage du message temporaire
             font = pygame.font.SysFont(None, 40)
             text = font.render("Génération du niveau en cours...", True, (255, 255, 255))
             pygame.draw.rect(self.screen, (0, 0, 0), (WIDTH // 2 - 150, HEIGHT // 2 - 30, 300, 60))  # fond noir
             self.screen.blit(text, (WIDTH // 2 - text.get_width() // 2, HEIGHT // 2 - text.get_height() // 2))
-            pygame.display.update()  # force l'affichage immédiat
+            pygame.display.update()
     
             # Génération
             level_data = generate_random_level()
     
-            # Fin de génération : on instancie le board et lance le jeu
+            # Fin de génération
             self.board = Board(level_data)
             self.in_menu = False
             self.isGameRunning = True
