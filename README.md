@@ -75,8 +75,11 @@ Le bouton **"Solution"** utilise un **algorithme de type Breadth-First Search (B
 │   ├── car.png   ← voiture rouge
 │   ├── truck.png
 │   └── menu.png  ← fond du menu
-└── requirements.txt
 ```
 
 ## 📸 Aperçu
+![image](https://github.com/user-attachments/assets/fcfe88fd-c301-446b-88c3-0fdd89bb7885)
+
+![image](https://github.com/user-attachments/assets/7d41a51c-8546-4c35-a997-a5cb33089505)
+
 
