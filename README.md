@@ -65,16 +65,17 @@ Le bouton **"Solution"** utilise un **algorithme de type Breadth-First Search (B
 ├── main.py
 ├── ui/
 │   └── gui.py
-├── game/
-│   ├── board.py
-│   ├── levels.py
-│   ├── solver.py
-│   └── level_generator.py
-├── assets/
-│   ├── car1.png
-│   ├── car.png   ← voiture rouge
-│   ├── truck.png
-│   └── menu.png  ← fond du menu
+|   └── assets/
+│       ├── car1.png
+│       ├── car.png   ← voiture rouge
+│       ├── truck.png
+│       └── menu.png  ← fond du menu
+└── game/
+    ├── board.py
+    ├── levels.py
+    ├── solver.py
+    └── level_generator.py
+
 ```
 
 ## 📸 Aperçu
